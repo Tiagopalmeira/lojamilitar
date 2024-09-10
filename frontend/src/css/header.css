@@ -1,0 +1,44 @@
+/* header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: #363636;
+
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 2rem;
+    /* Ajuste conforme necessário */
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    border: 10%px solid #3636361f;
+    border-radius: 1.5rem;
+    
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-icon,
+.cart-icon {
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

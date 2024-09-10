@@ -1,0 +1,290 @@
+/* Estilos Gerais */
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  /* Garante que a imagem de fundo não saia do contêiner */
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 18.75rem;
+  /* equivalente a 300px */
+  background-image: url('https://acdn.mitiendanube.com/stores/001/686/454/themes/amazonas/2-slide-1719950613171-544873226-5382227b47bc90f50b4029615ed9e06f1719950615-1920-1920.webp?46755272');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-text-left,
+.banner-text-right {
+  position: absolute;
+  color: #fff;
+}
+
+.banner-text-left {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-text-right {
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.category-item {
+  width: 30%;
+  text-align: center;
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+}
+
+.category-text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.offers-section {
+  padding: 5%;
+  background-color: #f0f0f0;
+}
+
+.offers-title {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #363636;
+  color: #ddd;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-item {
+  width: 30%;
+  text-align: center;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 0.625rem;
+  /* equivalente a 10px */
+}
+
+.offer-image {
+  width: 100%;
+  height: auto;
+}
+
+.offer-text {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.offer-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* Botão de oferta */
+.offer-button {
+  background-color: #444;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  /* equivalente a 8px */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.offer-button:hover {
+  background-color: #333;
+  transform: translateY(-0.125rem);
+  /* equivalente a -2px */
+}
+
+.offer-button:active {
+  transform: translateY(0);
+}
+
+/* Botão de adicionar ao carrinho */
+.add-car {
+  background-color: #ffffff;
+  color: #363636;
+  padding: 0.75rem 1.5rem;
+  border: 0.0625rem solid #ddd;
+  /* equivalente a 1px */
+  border-radius: 0.5rem;
+  /* equivalente a 8px */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-car:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-0.125rem);
+  /* equivalente a -2px */
+}
+
+.add-car:active {
+  transform: translateY(0);
+}
+
+/* Seção de Parceiros */
+.partner-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 0.625rem;
+  /* equivalente a 10px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  /* equivalente a 4px 8px */
+}
+
+.partner-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.partner-items {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #c5c5c5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.partner-logo {
+  width: 6%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  /* equivalente a 4px 12px */
+}
+
+.promocoes-container {
+  padding: 5%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.promocoes-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.promocoes-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promocao-item {
+  width: 22%;
+  background-color: #f9f9f9;
+  padding: 2%;
+  border-radius: 0.625rem;
+  /* equivalente a 10px */
+  position: relative;
+  text-align: center;
+}
+
+.promocao-offer {
+  position: absolute;
+  top: 0.625rem;
+  /* equivalente a 10px */
+  left: 0.625rem;
+  /* equivalente a 10px */
+  background-color: green;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0.3125rem;
+  /* equivalente a 5px */
+}
+
+.promocao-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.625rem;
+  /* equivalente a 10px */
+}
+
+.promocao-text {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+  /* equivalente a 5px */
+}
+
+.promocao-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+  color: #333;
+}
+
+.promocao-button {
+  background-color: #444;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+/* styles.css ou outro arquivo CSS */
+.sociais {
+  width: 50%;
+  /* Ajusta a largura da div para 50% do contêiner pai */
+  max-width: 300px;
+  /* Define uma largura máxima para a div */
+  margin: 0 auto;
+  /* Centraliza a div horizontalmente */
+}
+
+.sociais img {
+  width: 100%;
+  /* Faz com que a imagem ocupe 100% da largura da div */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
