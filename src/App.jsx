@@ -1,24 +1,23 @@
-import { useState } from 'react'
-import Header from './components/header'
-import Home from './components/home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/header';
+import Home from './components/home';
 import Footer from './components/footer';
+import ProductPage from './components/produto';
 
 
 function App() {
   return (
-
-    <div>
-
-      <Header />
-      <Home />
-      <Footer />
-      <div className='certificado'>
-        <img src="https://acdn.mitiendanube.com/stores/001/686/454/themes/amazonas/1-img-1638445021-1632833679-5e978ed505aa23e646d67624ee06a0f31632833679-480-0.webp?46755272" alt="" />
-
+    <Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/kit-sobrevivencia" element={<ProductPage />} />
+        </Routes>
+        <Footer />
       </div>
-    </div>
-
+    </Router>
   );
 }
 
-export default App
+export default App;

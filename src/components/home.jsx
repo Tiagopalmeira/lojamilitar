@@ -1,12 +1,14 @@
 import React from 'react';
 import '../css/home.css';
 import testeImage from '../img/teste.png';
+import { useNavigate } from 'react-router-dom'; 
+import ProductPage from './produto';
+
 
 const Home = () => {
-
-
-  const redirectTo = (url) => {
-    window.location.href = url;
+    const navigate = useNavigate(); // Hook para navegação
+    const redirectTo = (url) => {
+      navigate(url); // Use navigate para redirecionar
   };
 
   return (
@@ -55,7 +57,11 @@ const Home = () => {
             />
             <div className="offer-text">Kit Sobrevivência na Selva</div>
             <div className="offer-price">R$ 149,99</div>
-            <button className="offer-button">COMPRAR</button>
+            <button
+              className="offer-button"
+              onClick={() => redirectTo('/kit-sobrevivencia')}
+            >
+              COMPRAR</button>
             <button className="add-car">Adicionar ao carrinho</button>
           </div>
 
