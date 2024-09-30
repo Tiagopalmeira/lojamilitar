@@ -1,4 +1,4 @@
-# ** Seja Bem Vindo! **
+# **Seja Bem Vindo!**
 **Nome do Projeto:** Loja Militar  
 **Desenvolvedor ou Empresa Responsável:** Tiago Palmeira  
 **Local:** Araçás, Bahia  
