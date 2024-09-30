@@ -211,7 +211,7 @@ Os testes realizados mostraram que todas as funcionalidades estão operando conf
 ---
 
 ## **11. Custos e Orçamento**
-### 11.1. Estimativa de Custos
+### 11.1. Estimativa de Custos mensais
 - **Domínio:** R$34,90
 - **Outros serviços (ex.: CDN, backup):** R$179,90
 
