@@ -6,9 +6,6 @@
 
 ---
 
-# **Folha de Aprovação**
-*(Espaço para assinatura dos responsáveis pelo projeto e sua aprovação)*
-
 ---
 
 # **Sumário**
